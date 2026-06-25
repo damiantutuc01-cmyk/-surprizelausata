@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ionela & Vitalie | Surprize Muzicale</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    overflow-x:hidden;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    backdrop-filter:blur(10px);
+    background:rgba(15,23,42,.75);
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+}
+
+.menu{
+    display:flex;
+    gap:25px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.7)),
+    url("cover.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-box{
+    max-width:800px;
+    padding:40px;
+    border-radius:30px;
+    backdrop-filter:blur(10px);
+    background:rgba(255,255,255,.1);
+    border:1px solid rgba(255,255,255,.2);
+}
+
+.hero h1{
+    font-size:clamp(3rem,8vw,5rem);
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:clamp(1rem,3vw,1.3rem);
+    color:#ddd;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    background:linear-gradient(45deg,#f59e0b,#ef4444);
+    color:white;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card span{
+    font-size:45px;
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.gallery img{
+    width:90%;
+    height:90%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+
+.gallery img:hover{
+    transform: scale(1.03);
+}
+
+.contact{
+    background:#1e293b;
+    border-radius:25px;
+    padding:40px;
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+    font-size:1.1rem;
+}
+
+footer{
+    background:#020617;
+    text-align:center;
+    padding:25px;
+}
+
+.call-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:#22c55e;
+    color:white;
+    text-decoration:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    box-shadow:0 0 20px rgba(34,197,94,.5);
+    z-index:999;
+}
+
+@media(max-width:768px){
+
+    .menu{
+        display:none;
+    }
+
+    .hero-box{
+        padding:25px;
+    }
+
+    .gallery img{
+        height:250px;
+    }
+
+    .section-title{
+        font-size:2rem;
+    }
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+🎵 Ionela & Vitalie
+</div>
+
+<div class="menu">
+<a href="#servicii">Servicii</a>
+<a href="#galerie">Galerie</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-box">
+
+<h1>Ionela & Vitalie</h1>
+<img src="poza.jpg"
+style="width:250px; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.3); transition:0.3s;"
+onmouseover="this.style.transform='scale(1.05)'"
+onmouseout="this.style.transform='scale(1)'">
+
+<p>
+Surprize muzicale pentru nunți, aniversări,
+cumetrii, zile de naștere și evenimente speciale.
+</p>
+
+<a href="#contact" class="btn">
+Rezervă Acum
+</a>
+
+</div>
+
+</section>
+
+<section id="servicii">
+
+<h2 class="section-title">
+Serviciile Noastre
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<span>🎤</span>
+<h3>Muzică Live</h3>
+<p>Momente speciale interpretate live.</p>
+</div>
+
+<div class="card">
+<span>🎂</span>
+<h3>Aniversări</h3>
+<p>Surprize memorabile pentru cei dragi.</p>
+</div>
+
+
+
+<div class="card">
+<span>🎉</span>
+<h3>Evenimente</h3>
+<p>Participăm oriunde în Republica Moldova.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="galerie">
+
+<h2 class="section-title">
+Galerie Foto
+</h2>
+
+<div class="gallery">
+
+<img src="album\1.jpg" >
+<img src="album\2.jpg" alt="">
+
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="contact">
+
+<h2 class="section-title">
+Contact
+</h2>
+
+<p>📞 +373 698 97 151</p>
+<p>📞 +373 607 05 351</p>
+
+<p>
+📍 Disponibili în toată Republica Moldova
+</p>
+
+<br>
+
+<a
+class="btn"
+target="_blank"
+href="https://www.tiktok.com/@surprizelausata">
+TikTok
+</a>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Ionela & Vitalie • Toate drepturile rezervate
+</footer>
+
+<a href="tel:+37369897151" class="call-btn">
+📞
+</a>
+
+</body>
+</html>
